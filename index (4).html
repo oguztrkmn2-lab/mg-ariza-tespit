@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="tr" class="dark"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OtoAI Pro - Akıllı Atölye Arıza &amp; Çözüm Kılavuzu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #020617;
+      color: #f8fafc;
+    }
+    .font-mono-code {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 9999px;
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.-right-1{right:-0.25rem}.-top-1{top:-0.25rem}.bottom-1\/4{bottom:25%}.left-1\/4{left:25%}.right-1\/4{right:25%}.right-4{right:1rem}.top-0{top:0px}.top-1\/4{top:25%}.top-16{top:4rem}.z-40{z-index:40}.z-\[100\]{z-index:100}.z-\[90\]{z-index:90}.z-\[95\]{z-index:95}.col-span-2{grid-column:span 2 / span 2}.mx-auto{margin-left:auto;margin-right:auto}.my-auto{margin-top:auto;margin-bottom:auto}.mb-1{margin-bottom:0.25rem}.mb-1\.5{margin-bottom:0.375rem}.mr-1{margin-right:0.25rem}.mt-0\.5{margin-top:0.125rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-16{height:4rem}.h-4{height:1rem}.h-6{height:1.5rem}.h-9{height:2.25rem}.h-96{height:24rem}.max-h-48{max-height:12rem}.max-h-60{max-height:15rem}.max-h-\[250px\]{max-height:250px}.max-h-\[380px\]{max-height:380px}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-16{width:4rem}.w-4{width:1rem}.w-6{width:1.5rem}.w-9{width:2.25rem}.w-96{width:24rem}.w-full{width:100%}.max-w-3xl{max-width:48rem}.max-w-\[1600px\]{max-width:1600px}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.border-collapse{border-collapse:collapse}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-3\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.875rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.875rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-x-1 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.25rem * var(--tw-space-x-reverse));margin-left:calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-slate-800\/70 > :not([hidden]) ~ :not([hidden]){border-color:rgb(30 41 59 / 0.7)}.self-center{align-self:center}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-cyan-500\/30{border-color:rgb(6 182 212 / 0.3)}.border-cyan-500\/40{border-color:rgb(6 182 212 / 0.4)}.border-emerald-500\/30{border-color:rgb(16 185 129 / 0.3)}.border-emerald-500\/40{border-color:rgb(16 185 129 / 0.4)}.border-rose-500\/30{border-color:rgb(244 63 94 / 0.3)}.border-rose-500\/40{border-color:rgb(244 63 94 / 0.4)}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-amber-500\/20{background-color:rgb(245 158 11 / 0.2)}.bg-blue-600\/10{background-color:rgb(37 99 235 / 0.1)}.bg-cyan-500{--tw-bg-opacity:1;background-color:rgb(6 182 212 / var(--tw-bg-opacity, 1))}.bg-cyan-500\/10{background-color:rgb(6 182 212 / 0.1)}.bg-cyan-500\/20{background-color:rgb(6 182 212 / 0.2)}.bg-cyan-950\/40{background-color:rgb(8 51 68 / 0.4)}.bg-emerald-500\/15{background-color:rgb(16 185 129 / 0.15)}.bg-emerald-500\/20{background-color:rgb(16 185 129 / 0.2)}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-emerald-950\/40{background-color:rgb(2 44 34 / 0.4)}.bg-rose-500\/15{background-color:rgb(244 63 94 / 0.15)}.bg-rose-500\/20{background-color:rgb(244 63 94 / 0.2)}.bg-rose-600{--tw-bg-opacity:1;background-color:rgb(225 29 72 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-900\/95{background-color:rgb(15 23 42 / 0.95)}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity, 1))}.bg-slate-950\/80{background-color:rgb(2 6 23 / 0.8)}.bg-slate-950\/90{background-color:rgb(2 6 23 / 0.9)}.bg-cyan-600{--tw-bg-opacity:1;background-color:rgb(8 145 178 / var(--tw-bg-opacity, 1))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-cyan-500{--tw-gradient-from:#06b6d4 var(--tw-gradient-from-position);--tw-gradient-to:rgb(6 182 212 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-cyan-600{--tw-gradient-from:#0891b2 var(--tw-gradient-from-position);--tw-gradient-to:rgb(8 145 178 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-emerald-600{--tw-gradient-from:#059669 var(--tw-gradient-from-position);--tw-gradient-to:rgb(5 150 105 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-blue-600{--tw-gradient-to:#2563eb var(--tw-gradient-to-position)}.to-cyan-600{--tw-gradient-to:#0891b2 var(--tw-gradient-to-position)}.to-emerald-600{--tw-gradient-to:#059669 var(--tw-gradient-to-position)}.p-1\.5{padding:0.375rem}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-2{padding-bottom:0.5rem}.pb-2\.5{padding-bottom:0.625rem}.pb-3{padding-bottom:0.75rem}.pr-1{padding-right:0.25rem}.pt-1{padding-top:0.25rem}.pt-2{padding-top:0.5rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-semibold{font-weight:600}.font-normal{font-weight:400}.uppercase{text-transform:uppercase}.lowercase{text-transform:lowercase}.leading-none{line-height:1}.tracking-tight{letter-spacing:-0.025em}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-cyan-300{--tw-text-opacity:1;color:rgb(103 232 249 / var(--tw-text-opacity, 1))}.text-cyan-400{--tw-text-opacity:1;color:rgb(34 211 238 / var(--tw-text-opacity, 1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-rose-300{--tw-text-opacity:1;color:rgb(253 164 175 / var(--tw-text-opacity, 1))}.text-rose-400{--tw-text-opacity:1;color:rgb(251 113 133 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-950{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-cyan-500\/20{--tw-shadow-color:rgb(6 182 212 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-cyan-500\/25{--tw-shadow-color:rgb(6 182 212 / 0.25);--tw-shadow:var(--tw-shadow-colored)}.shadow-cyan-600\/25{--tw-shadow-color:rgb(8 145 178 / 0.25);--tw-shadow:var(--tw-shadow-colored)}.shadow-rose-600\/25{--tw-shadow-color:rgb(225 29 72 / 0.25);--tw-shadow:var(--tw-shadow-colored)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.selection\:bg-cyan-500 *::selection{--tw-bg-opacity:1;background-color:rgb(6 182 212 / var(--tw-bg-opacity, 1))}.selection\:text-slate-950 *::selection{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.selection\:bg-cyan-500::selection{--tw-bg-opacity:1;background-color:rgb(6 182 212 / var(--tw-bg-opacity, 1))}.selection\:text-slate-950::selection{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.hover\:border-amber-400\/50:hover{border-color:rgb(251 191 36 / 0.5)}.hover\:border-cyan-500:hover{--tw-border-opacity:1;border-color:rgb(6 182 212 / var(--tw-border-opacity, 1))}.hover\:border-slate-700:hover{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.hover\:bg-amber-400:hover{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-500:hover{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-500\/25:hover{background-color:rgb(16 185 129 / 0.25)}.hover\:bg-rose-500:hover{--tw-bg-opacity:1;background-color:rgb(244 63 94 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-500\/25:hover{background-color:rgb(244 63 94 / 0.25)}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-800\/60:hover{background-color:rgb(30 41 59 / 0.6)}.hover\:bg-cyan-500:hover{--tw-bg-opacity:1;background-color:rgb(6 182 212 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-950\/50:hover{background-color:rgb(2 6 23 / 0.5)}.hover\:from-cyan-500:hover{--tw-gradient-from:#06b6d4 var(--tw-gradient-from-position);--tw-gradient-to:rgb(6 182 212 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:from-emerald-500:hover{--tw-gradient-from:#10b981 var(--tw-gradient-from-position);--tw-gradient-to:rgb(16 185 129 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.focus\:border-amber-400:focus{--tw-border-opacity:1;border-color:rgb(251 191 36 / var(--tw-border-opacity, 1))}.focus\:border-cyan-500:focus{--tw-border-opacity:1;border-color:rgb(6 182 212 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:col-span-1{grid-column:span 1 / span 1}.sm\:col-span-3{grid-column:span 3 / span 3}.sm\:col-span-6{grid-column:span 6 / span 6}.sm\:block{display:block}.sm\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:p-8{padding:2rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 768px){.md\:block{display:block}}@media (min-width: 1024px){.lg\:col-span-3{grid-column:span 3 / span 3}.lg\:col-span-4{grid-column:span 4 / span 4}.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}}</style></head>
+<body class="min-h-screen flex flex-col selection:bg-cyan-500 selection:text-slate-950">
+
+  <!-- GİRİŞ KAPISI (AUTH GATE) -->
+  <div id="auth-gate-screen" class="fixed inset-0 z-[90] bg-slate-950 flex items-center justify-center p-4 overflow-y-auto">
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="relative w-full max-w-md bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6 my-auto">
+      <div class="text-center space-y-2">
+        <div onclick="handleSecretLogoClick()" class="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-xl shadow-cyan-500/25 text-white text-2xl mx-auto cursor-pointer transition active:scale-95" title="Gizli Kurulum Menüsü">
+          <i class="fa-solid fa-microchip"></i>
+        </div>
+        <h1 class="text-xl font-extrabold text-white tracking-tight">OtoAI Pro Atölye Girişi</h1>
+        <p class="text-xs text-slate-400">Teknisyen Hesabınızla Oturum Açın</p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-1.5 bg-slate-950 p-1.5 rounded-2xl border border-slate-800">
+        <button type="button" onclick="switchAuthTab('login')" id="auth-tab-login" class="py-2 rounded-xl text-xs font-extrabold transition bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow cursor-pointer">
+          <i class="fa-solid fa-right-to-bracket mr-1"></i> Giriş Yap
+        </button>
+        <button type="button" onclick="switchAuthTab('register')" id="auth-tab-register" class="py-2 rounded-xl text-xs font-bold transition text-slate-400 hover:text-white cursor-pointer">
+          <i class="fa-solid fa-user-plus mr-1"></i> Yeni Usta Kaydı
+        </button>
+      </div>
+
+      <div id="auth-error-box" class="hidden p-3 rounded-xl bg-rose-500/15 border border-rose-500/40 text-rose-300 text-xs font-semibold flex items-center gap-2">
+        <i class="fa-solid fa-circle-exclamation text-rose-400 shrink-0"></i>
+        <span id="auth-error-text">Hata mesajı</span>
+      </div>
+
+      <!-- FORM 1: GİRİŞ YAP -->
+      <div id="auth-form-login" class="space-y-4">
+        <div>
+          <label class="text-[11px] font-bold text-slate-300 block mb-1.5 uppercase tracking-wider">
+            <i class="fa-solid fa-user text-cyan-400 mr-1"></i> Kullanıcı Adı
+          </label>
+          <input id="login-username" type="text" placeholder="Örn: oguzhan" onkeydown="if(event.key==='Enter') submitLogin()" class="w-full bg-slate-950 border border-slate-700 focus:border-cyan-500 rounded-xl px-3.5 py-3 text-sm text-white font-semibold focus:outline-none">
+        </div>
+
+        <div>
+          <label class="text-[11px] font-bold text-slate-300 block mb-1.5 uppercase tracking-wider">
+            <i class="fa-solid fa-lock text-cyan-400 mr-1"></i> Şifre
+          </label>
+          <input id="login-password" type="password" placeholder="••••" onkeydown="if(event.key==='Enter') submitLogin()" class="w-full bg-slate-950 border border-slate-700 focus:border-cyan-500 rounded-xl px-3.5 py-3 text-sm text-white font-semibold focus:outline-none">
+        </div>
+
+        <button type="button" onclick="submitLogin()" class="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 text-white font-extrabold py-3.5 rounded-xl text-sm shadow-lg shadow-cyan-600/25 transition flex items-center justify-center gap-2 cursor-pointer">
+          <i class="fa-solid fa-unlock-keyhole"></i>
+          <span>Atölye Sistemine Giriş Yap</span>
+        </button>
+
+        <div class="pt-2 border-t border-slate-800 space-y-2">
+          <div class="text-[11px] font-semibold text-slate-400">Kayıtlı Teknisyenler (Hızlı Giriş İçin Tıkla):</div>
+          <div id="auth-quick-users" class="flex flex-wrap gap-1.5">
+        <button type="button" onclick="quickLogin('oguzhan')" class="px-2.5 py-1.5 rounded-xl bg-slate-950 border border-slate-800 text-left text-xs cursor-pointer hover:border-cyan-500 transition">
+          <span class="font-bold text-white">Oğuzhan Usta</span> <span class="text-cyan-400 font-mono-code">(@oguzhan, 1234)</span>
+        </button>
+      
+        <button type="button" onclick="quickLogin('sinan')" class="px-2.5 py-1.5 rounded-xl bg-slate-950 border border-slate-800 text-left text-xs cursor-pointer hover:border-cyan-500 transition">
+          <span class="font-bold text-white">Sinan Usta</span> <span class="text-cyan-400 font-mono-code">(@sinan, 1234)</span>
+        </button>
+      </div>
+        </div>
+      </div>
+
+      <!-- FORM 2: YENİ TEKNİSYEN KAYDI -->
+      <div id="auth-form-register" class="hidden space-y-3.5">
+        <div>
+          <label class="text-[11px] font-bold text-slate-300 block mb-1">Ad Soyad / Usta Adı *</label>
+          <input id="reg-fullname" type="text" placeholder="Örn: Ahmet Usta" class="w-full bg-slate-950 border border-slate-700 focus:border-cyan-500 rounded-xl px-3.5 py-2.5 text-xs text-white font-semibold focus:outline-none">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+          <div>
+            <label class="text-[11px] font-bold text-cyan-400 block mb-1">Kullanıcı Adı *</label>
+            <input id="reg-username" type="text" placeholder="ahmet" class="w-full bg-slate-950 border border-slate-700 focus:border-cyan-500 rounded-xl px-3.5 py-2.5 text-xs font-mono-code text-white lowercase focus:outline-none">
+          </div>
+          <div>
+            <label class="text-[11px] font-bold text-cyan-400 block mb-1">Şifre *</label>
+            <input id="reg-password" type="password" placeholder="Şifre" class="w-full bg-slate-950 border border-slate-700 focus:border-cyan-500 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none">
+          </div>
+        </div>
+
+        <button type="button" onclick="submitRegister()" class="w-full bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-500 text-white font-extrabold py-3 rounded-xl text-xs sm:text-sm shadow-lg transition flex items-center justify-center gap-2 cursor-pointer">
+          <i class="fa-solid fa-user-check"></i>
+          <span>Hesabı Oluştur ve Giriş Yap</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ÜST BAR (Gizli İndirme Butonu Eklendi: Logoya 3 Tık veya Ctrl+Shift+S) -->
+  <header class="sticky top-0 z-40 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 px-3 sm:px-6 py-2.5">
+    <div class="max-w-[1600px] mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-2.5">
+        <div onclick="handleSecretLogoClick()" class="w-10 h-10 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/20 text-white font-extrabold text-lg cursor-pointer transition active:scale-95" title="Gizli Kurulum Paneli">
+          <i class="fa-solid fa-microchip"></i>
+        </div>
+        <div class="hidden sm:block">
+          <div class="flex items-center gap-1.5">
+            <h1 class="text-sm font-extrabold tracking-tight text-white">OtoAI Pro</h1>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 flex items-center gap-1">
+              <i class="fa-solid fa-cloud"></i> otopro-faa28 Aktif
+            </span>
+          </div>
+          <p class="text-[10px] text-slate-400">Akıllı Atölye &amp; Arıza Kılavuzu</p>
+        </div>
+      </div>
+
+      <!-- Minimalist Simgeli Navigasyon -->
+      <nav class="flex items-center gap-1.5 bg-slate-950/90 p-1.5 rounded-2xl border border-slate-800">
+        <button type="button" onclick="switchView('intake')" id="tab-btn-intake" class="w-10 h-10 rounded-xl flex items-center justify-center transition-all bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md text-base cursor-pointer" title="1. Kamera &amp; İş Emri">
+          <i class="fa-solid fa-camera-retro"></i>
+        </button>
+        <button type="button" onclick="switchView('guide')" id="tab-btn-guide" class="w-10 h-10 rounded-xl flex items-center justify-center transition-all text-slate-400 hover:text-white hover:bg-slate-800/60 text-base cursor-pointer" title="2. AI Çözüm Kılavuzu">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+        </button>
+        <button type="button" onclick="switchView('database')" id="tab-btn-database" class="w-10 h-10 rounded-xl flex items-center justify-center transition-all text-slate-400 hover:text-white hover:bg-slate-800/60 text-base relative cursor-pointer" title="3. Ortak Bulut Arşivi">
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+          <span id="nav-db-count" class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-cyan-500 text-slate-950 text-[10px] font-extrabold flex items-center justify-center">4</span>
+        </button>
+        <button type="button" onclick="switchView('obd')" id="tab-btn-obd" class="w-10 h-10 rounded-xl flex items-center justify-center transition-all text-slate-400 hover:text-white hover:bg-slate-800/60 text-base cursor-pointer" title="4. Hızlı OBD Çözücü">
+          <i class="fa-solid fa-barcode"></i>
+        </button>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button type="button" onclick="resetFormForNewCar()" class="w-9 h-9 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-400 border border-emerald-500/30 flex items-center justify-center text-sm transition cursor-pointer" title="Yeni Araç Kaydı">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="flex items-center gap-1.5 bg-slate-950 border border-slate-800 rounded-xl px-2.5 py-1.5">
+          <span id="active-tech-avatar" class="w-6 h-6 rounded-lg bg-cyan-500 text-slate-950 font-extrabold text-[11px] flex items-center justify-center">OU</span>
+          <div class="hidden md:block text-left">
+            <div id="active-tech-name" class="text-xs font-bold text-white leading-none">Oğuzhan Usta</div>
+            <div id="active-tech-username" class="text-[10px] text-cyan-400 font-mono-code leading-none mt-0.5">@oguzhan</div>
+          </div>
+        </div>
+        <button type="button" onclick="logoutTechnician()" class="w-9 h-9 rounded-xl bg-rose-500/15 hover:bg-rose-500/25 text-rose-400 border border-rose-500/30 flex items-center justify-center text-xs transition cursor-pointer" title="Çıkış Yap">
+          <i class="fa-solid fa-power-off"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div id="toast-box" class="fixed top-16 right-4 z-[100] space-y-2 max-w-sm"></div>
+
+  <!-- GİZLİ SİTE İNDİRME & CONFIG MODALI (Sadece Logoya 3 Tık veya Ctrl+Shift+S ile Açılır) -->
+  <div id="config-modal" class="fixed inset-0 z-[95] bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 max-w-md w-full shadow-2xl space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-xl bg-cyan-500/20 border border-cyan-500/40 text-cyan-400 flex items-center justify-center">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-extrabold text-white">Hazır Site Paketi (index.html)</h3>
+            <p class="text-[11px] text-slate-400">Firebase &amp; Gemini Kodları Gömülüdür</p>
+          </div>
+        </div>
+        <button type="button" onclick="closeConfigModal()" class="text-slate-400 hover:text-white text-sm cursor-pointer">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="space-y-3 text-xs">
+        <div class="p-3 rounded-xl bg-emerald-950/40 border border-emerald-500/30 text-emerald-300 space-y-1">
+          <div class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-circle-check"></i> Gömülü Bulut &amp; AI Kodları Hazır</div>
+          <p class="text-[11px] text-slate-300">Firebase (<span class="font-mono-code text-white">otopro-faa28</span>) ve Gemini API anahtarlarınız doğrudan bu dosyanın içine gömülmüştür.</p>
+        </div>
+
+        <div>
+          <label class="text-[11px] font-bold text-slate-300 block mb-1">Özel / Ek Gemini API Anahtarı (İsteğe Bağlı):</label>
+          <input id="inp-custom-gemini-key" type="text" placeholder="AIzaSy... (Boş bırakırsanız gömülü anahtar çalışır)" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs font-mono-code text-cyan-300 focus:outline-none">
+        </div>
+
+        <button type="button" onclick="downloadReadyIndexHtml()" class="w-full bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-500 text-white font-extrabold py-3 px-4 rounded-xl text-xs shadow-lg transition flex items-center justify-center gap-2 cursor-pointer">
+          <i class="fa-solid fa-file-arrow-down text-sm"></i>
+          <span>Hazır index.html Dosyasını İndir</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ÖZEL SİLME ONAY MODALI -->
+  <div id="delete-confirm-modal" class="hidden fixed inset-0 z-[95] bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 max-w-sm w-full shadow-2xl space-y-4">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-rose-500/20 border border-rose-500/40 text-rose-400 flex items-center justify-center shrink-0">
+          <i class="fa-solid fa-triangle-exclamation text-lg"></i>
+        </div>
+        <div>
+          <h3 class="text-sm font-extrabold text-white">Kaydı Silmek İstiyor Musunuz?</h3>
+          <p id="delete-modal-desc" class="text-xs text-slate-400 mt-0.5">Bu araç kaydı ve çözümleri silinecek.</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-end gap-2 pt-2 border-t border-slate-800">
+        <button type="button" onclick="closeDeleteModal()" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold cursor-pointer">
+          Vazgeç
+        </button>
+        <button type="button" onclick="confirmDeleteRecord()" class="px-4 py-2 rounded-xl bg-rose-600 hover:bg-rose-500 text-white text-xs font-extrabold cursor-pointer flex items-center gap-1.5 shadow-lg shadow-rose-600/25">
+          <i class="fa-solid fa-trash-can"></i> Evet, Sil
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <main class="flex-1 max-w-[1600px] w-full mx-auto px-3 sm:px-6 py-4">
+
+    <!-- SAYFA 1: İŞ EMRİ & KAMERA GİRİŞİ -->
+    <section id="view-intake" class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
+      <div class="lg:col-span-5 space-y-4">
+        <div class="bg-slate-900 border border-cyan-500/40 rounded-2xl p-4 shadow-xl space-y-3">
+          <div class="flex items-center gap-2.5">
+            <span class="w-9 h-9 rounded-xl bg-cyan-500/20 border border-cyan-500/40 text-cyan-400 flex items-center justify-center">
+              <i class="fa-solid fa-camera"></i>
+            </span>
+            <div>
+              <h2 class="text-xs sm:text-sm font-extrabold text-white uppercase tracking-wide">İş Emri Kamera Tarayıcı</h2>
+              <p class="text-[11px] text-slate-400">İş Emri No, Şasi (VIN), Plaka ve Şikayetleri Otomatik Çeker</p>
+            </div>
+          </div>
+
+          <input id="inp-workorder-photo" type="file" accept="image/*" capture="environment" class="hidden" onchange="handleWorkOrderFile(event)">
+          <div class="grid grid-cols-2 gap-2.5">
+            <button type="button" onclick="document.getElementById('inp-workorder-photo').click()" class="bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-bold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-2 cursor-pointer shadow">
+              <i class="fa-solid fa-camera-retro"></i> Fotoğraf Çek / Yükle
+            </button>
+            <button type="button" onclick="simulateSampleWorkOrder()" class="bg-slate-800 hover:bg-slate-700 text-cyan-300 font-semibold py-2.5 px-3 rounded-xl text-xs border border-slate-700 flex items-center justify-center gap-2 cursor-pointer">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> Örnek İş Emri Doldur
+            </button>
+          </div>
+          <div id="ai-scan-status" class="hidden text-xs text-cyan-300 font-semibold p-2 bg-cyan-950/40 border border-cyan-500/30 rounded-xl text-center">
+            <i class="fa-solid fa-circle-notch fa-spin mr-1"></i> Gemini AI iş emrini okuyor...
+          </div>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-xl space-y-3">
+          <h3 class="text-xs font-bold text-white flex items-center gap-2">
+            <i class="fa-solid fa-clock-rotate-left text-cyan-400"></i> Atölyedeki Araçlar
+          </h3>
+          <div id="sidebar-records-list" class="space-y-2 max-h-[250px] overflow-y-auto pr-1">
+        <div onclick="selectRecord('ARZ-1792131365149')" class="p-2.5 rounded-xl border cursor-pointer transition bg-slate-950 border-slate-800 hover:border-slate-700">
+          <div class="flex justify-between font-bold text-xs"><span class="text-cyan-400">34MGV131</span><span class="text-slate-400">İnceleniyor</span></div>
+          <div class="text-slate-200 text-xs truncate">MG HS PHEV</div>
+        </div>
+      
+        <div onclick="selectRecord('ARZ-1792096037797')" class="p-2.5 rounded-xl border cursor-pointer transition bg-slate-950 border-slate-800 hover:border-slate-700">
+          <div class="flex justify-between font-bold text-xs"><span class="text-cyan-400">10 ANA 739</span><span class="text-slate-400">İnceleniyor</span></div>
+          <div class="text-slate-200 text-xs truncate">MG HS</div>
+        </div>
+      
+        <div onclick="selectRecord('ARZ-1792096016927')" class="p-2.5 rounded-xl border cursor-pointer transition bg-slate-950 border-slate-800 hover:border-slate-700">
+          <div class="flex justify-between font-bold text-xs"><span class="text-cyan-400">10 ANA 739</span><span class="text-slate-400">İnceleniyor</span></div>
+          <div class="text-slate-200 text-xs truncate">MG HS</div>
+        </div>
+      
+        <div onclick="selectRecord('ARZ-1792095930416')" class="p-2.5 rounded-xl border cursor-pointer transition bg-slate-950 border-slate-800 hover:border-slate-700">
+          <div class="flex justify-between font-bold text-xs"><span class="text-cyan-400">34 DTR 404</span><span class="text-slate-400">İnceleniyor</span></div>
+          <div class="text-slate-200 text-xs truncate">MG4 Electric Luxury</div>
+        </div>
+      </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7 bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-xl space-y-3.5">
+        <h3 class="text-xs sm:text-sm font-bold text-white flex items-center gap-2 border-b border-slate-800 pb-2.5">
+          <i class="fa-solid fa-car-side text-cyan-400"></i> Araç &amp; Arıza Kayıt Formu
+        </h3>
+
+        <div class="grid grid-cols-1 sm:grid-cols-12 gap-3">
+          <div class="sm:col-span-6 bg-slate-950 border border-slate-800 rounded-xl p-2.5">
+            <label class="text-[11px] font-bold text-cyan-400 block mb-1">ŞASİ NO (17 HANE - ISO 3779)</label>
+            <input id="inp-vin" type="text" maxlength="17" placeholder="WVWZZZ3CZGE149284" class="w-full bg-slate-900 border border-slate-700 focus:border-cyan-500 rounded-lg px-2.5 py-1.5 text-xs font-mono-code font-bold text-white uppercase focus:outline-none">
+          </div>
+          <div class="sm:col-span-3">
+            <label class="text-[11px] font-semibold text-slate-400 block mb-1">Plaka *</label>
+            <input id="inp-plate" type="text" placeholder="34 KLM 88" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2.5 text-xs font-mono-code font-bold text-white uppercase focus:outline-none">
+          </div>
+          <div class="sm:col-span-3">
+            <label class="text-[11px] font-semibold text-slate-400 block mb-1">İş Emri No</label>
+            <input id="inp-workorder-no" type="text" placeholder="İE-2026-841" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2.5 text-xs font-mono-code text-white uppercase focus:outline-none">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+          <div class="col-span-2 sm:col-span-1">
+            <label class="text-[11px] font-semibold text-slate-400 block mb-1">Marka &amp; Model *</label>
+            <input id="inp-model" type="text" placeholder="VW Passat" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none">
+          </div>
+          <div>
+            <label class="text-[11px] font-semibold text-slate-400 block mb-1">Model Yılı</label>
+            <input id="inp-year" type="number" placeholder="2018" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none">
+          </div>
+          <div>
+            <label class="text-[11px] font-semibold text-slate-400 block mb-1">Motor / Batarya</label>
+            <input id="inp-engine" type="text" placeholder="1.6 TDI" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none">
+          </div>
+          <div>
+            <label class="text-[11px] font-semibold text-slate-400 block mb-1">Kilometre (KM)</label>
+            <input id="inp-km" type="number" placeholder="184000" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none">
+          </div>
+        </div>
+
+        <div>
+          <label class="text-[11px] font-semibold text-slate-400 block mb-1">OBD-II / DTC Kodları</label>
+          <input id="inp-obd" type="text" placeholder="P0299, P0401" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs font-mono-code font-bold text-amber-300 uppercase focus:outline-none">
+        </div>
+
+        <div>
+          <label class="text-[11px] font-semibold text-slate-400 block mb-1">Müşteri Şikayetleri (Her satıra bir arıza maddesi) *</label>
+          <textarea id="inp-symptoms" rows="3" placeholder="1) Aracın bagajı açılmamaktadır
+2) Yokuşta çekiş düşüyor..." class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none"></textarea>
+        </div>
+
+        <button id="btn-generate-guide" type="button" onclick="generateAiGuide()" class="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 text-white font-extrabold py-3 px-4 rounded-xl text-xs sm:text-sm shadow-lg shadow-cyan-600/25 transition flex items-center justify-center gap-2 cursor-pointer">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span>Arızaları Analiz Et &amp; Çözüm Kılavuzuna Git</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SAYFA 2: AI ÇÖZÜM KILAVUZU & TEŞHİS -->
+    <section id="view-guide" class="hidden space-y-4">
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 shadow-xl flex flex-wrap items-center justify-between gap-3">
+        <div class="flex items-center gap-3">
+          <button type="button" onclick="switchView('intake')" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center border border-slate-700 cursor-pointer">
+            <i class="fa-solid fa-arrow-left text-xs"></i>
+          </button>
+          <div>
+            <div class="flex items-center gap-2">
+              <span id="guide-plate" class="font-mono-code font-extrabold text-sm px-2.5 py-0.5 rounded-lg bg-slate-950 text-cyan-400">34 KLM 88</span>
+              <h2 id="guide-car-title" class="text-sm font-extrabold text-white">VW Passat</h2>
+              <span id="guide-status-badge" class="px-2 py-0.5 rounded-full text-[11px] font-semibold bg-amber-500/20 text-amber-300">İnceleniyor</span>
+            </div>
+            <p id="guide-meta" class="text-[11px] text-slate-400 font-mono-code mt-0.5">2018 • 184.000 KM</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <button type="button" onclick="deleteActiveRecord()" class="bg-rose-500/15 hover:bg-rose-500/25 text-rose-300 text-xs font-semibold px-3 py-2 rounded-xl border border-rose-500/30 cursor-pointer">
+            <i class="fa-solid fa-trash-can"></i> Kaydı Sil
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
+        <div class="lg:col-span-4 space-y-4">
+          <div class="bg-slate-900 border border-cyan-500/30 rounded-2xl p-4 shadow-xl space-y-2.5">
+            <div class="flex items-center justify-between">
+              <h3 class="text-xs font-extrabold text-white uppercase tracking-wide">Şikayet Maddeleri</h3>
+              <span id="selected-fault-badge" class="text-[10px] font-extrabold bg-cyan-500 text-slate-950 px-2 py-0.5 rounded">Madde 1</span>
+            </div>
+            <div id="guide-fault-items-tabs" class="space-y-1.5 max-h-48 overflow-y-auto pr-1"></div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-xl space-y-2.5">
+            <h3 class="text-xs font-extrabold text-white flex items-center gap-1.5 border-b border-slate-800 pb-2">
+              <i class="fa-solid fa-chart-pie text-cyan-400"></i> Olası Kök Nedenler
+            </h3>
+            <div id="guide-causes-list" class="space-y-2.5 max-h-60 overflow-y-auto pr-1"></div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-xl space-y-3">
+          <h3 class="text-xs sm:text-sm font-extrabold text-white flex items-center gap-2 border-b border-slate-800 pb-2.5">
+            <i class="fa-solid fa-screwdriver-wrench text-emerald-400"></i> Adım Adım Teşhis Kılavuzu
+          </h3>
+          <p id="guide-symptoms-text" class="text-xs font-bold text-cyan-300"></p>
+          <div id="guide-steps-list" class="space-y-2 max-h-[380px] overflow-y-auto pr-1"></div>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <div class="bg-slate-900 border border-emerald-500/40 rounded-2xl p-3.5 shadow-xl space-y-2.5">
+            <h3 class="text-xs font-extrabold text-emerald-400 flex items-center gap-1.5">
+              <i class="fa-solid fa-clipboard-check"></i> Seçili Madde Çözüm Kaydı
+            </h3>
+            <textarea id="inp-verified-solution" rows="3" placeholder="Arıza nasıl çözüldü yazın..." class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none" oninput="saveSolutionNoteDraft()"></textarea>
+            <div class="grid grid-cols-2 gap-1.5">
+              <button type="button" onclick="saveSolutionNote()" class="bg-slate-800 hover:bg-slate-700 text-slate-200 py-2 rounded-xl text-[11px] font-bold border border-slate-700 cursor-pointer">Notu Kaydet</button>
+              <button type="button" onclick="toggleItemSolved()" class="bg-emerald-600 hover:bg-emerald-500 text-white py-2 rounded-xl text-[11px] font-extrabold cursor-pointer">Çözüldü Yap</button>
+            </div>
+            <button type="button" onclick="saveAllAndArchive()" class="w-full bg-gradient-to-r from-cyan-600 to-emerald-600 text-white font-extrabold py-2.5 px-3 rounded-xl text-xs cursor-pointer shadow">
+              <i class="fa-solid fa-cloud-arrow-up mr-1"></i> Tüm Çözümleri Arşive Gönder
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAYFA 3: ORTAK BULUT ARŞİVİ -->
+    <section id="view-database" class="hidden space-y-4">
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-xl space-y-4">
+        <h2 class="text-sm font-extrabold text-white flex items-center gap-2">
+          <i class="fa-solid fa-cloud text-cyan-400"></i> Ortak Bulut Arıza &amp; Çözüm Arşivi
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs">
+            <thead>
+              <tr class="border-b border-slate-800 text-slate-400 uppercase text-[10px]">
+                <th class="py-2.5 px-3">Plaka / Araç</th>
+                <th class="py-2.5 px-3">Şasi (VIN)</th>
+                <th class="py-2.5 px-3">OBD Kodları</th>
+                <th class="py-2.5 px-3">Arıza Maddeleri &amp; Çözümler</th>
+                <th class="py-2.5 px-3">Teknisyen</th>
+                <th class="py-2.5 px-3">Durum</th>
+                <th class="py-2.5 px-3 text-right">İşlem</th>
+              </tr>
+            </thead>
+            <tbody id="database-table-body" class="divide-y divide-slate-800/70">
+        <tr class="border-b border-slate-800 hover:bg-slate-950/50">
+          <td class="py-3 px-3 font-mono-code font-bold text-cyan-400">34MGV131<br><span class="text-white font-normal">MG HS PHEV</span><br><span class="text-[10px] text-slate-400">I20260008805936</span></td>
+          <td class="py-3 px-3 font-mono-code text-[11px] text-slate-300">LSJW94396RG058375</td>
+          <td class="py-3 px-3 font-mono-code text-amber-300 font-bold">-</td>
+          <td class="py-3 px-3 space-y-1">
+            <div class="text-[11px]"><strong>1.</strong> Turboşarj/Süperşarj Takviye Kontrolü 'A' Konumu Öğrenme Sınırı Aşıldı <span class="text-cyan-300">(İnceleniyor)</span> </div>
+          </td>
+          <td class="py-3 px-3 text-slate-300">Oğuzhan Usta</td>
+          <td class="py-3 px-3"><span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">İnceleniyor</span></td>
+          <td class="py-3 px-3 text-right space-x-1">
+            <button onclick="selectRecord('ARZ-1792131365149')" class="bg-cyan-600 hover:bg-cyan-500 text-white font-bold px-3 py-1.5 rounded-xl text-[11px] cursor-pointer shadow">Aç</button>
+          </td>
+        </tr>
+      
+        <tr class="border-b border-slate-800 hover:bg-slate-950/50">
+          <td class="py-3 px-3 font-mono-code font-bold text-cyan-400">10 ANA 739<br><span class="text-white font-normal">MG HS</span><br><span class="text-[10px] text-slate-400">I20260008805838</span></td>
+          <td class="py-3 px-3 font-mono-code text-[11px] text-slate-300">LSJA24U90PN083083</td>
+          <td class="py-3 px-3 font-mono-code text-amber-300 font-bold">-</td>
+          <td class="py-3 px-3 space-y-1">
+            <div class="text-[11px]"><strong>1.</strong> Kasislerden Geçerken Direksiyonda Ses Şikayeti <span class="text-cyan-300">(İnceleniyor)</span> </div><div class="text-[11px]"><strong>2.</strong> Sol Ön Kapı Ayarı Kontrolü <span class="text-cyan-300">(İnceleniyor)</span> </div><div class="text-[11px]"><strong>3.</strong> Sağ Ön B Sütunu / Emniyet Kemeri Çıtırtı Sesi <span class="text-cyan-300">(İnceleniyor)</span> </div>
+          </td>
+          <td class="py-3 px-3 text-slate-300">Oğuzhan Usta</td>
+          <td class="py-3 px-3"><span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">İnceleniyor</span></td>
+          <td class="py-3 px-3 text-right space-x-1">
+            <button onclick="selectRecord('ARZ-1792096037797')" class="bg-cyan-600 hover:bg-cyan-500 text-white font-bold px-3 py-1.5 rounded-xl text-[11px] cursor-pointer shadow">Aç</button>
+          </td>
+        </tr>
+      
+        <tr class="border-b border-slate-800 hover:bg-slate-950/50">
+          <td class="py-3 px-3 font-mono-code font-bold text-cyan-400">10 ANA 739<br><span class="text-white font-normal">MG HS</span><br><span class="text-[10px] text-slate-400">I20260008805838</span></td>
+          <td class="py-3 px-3 font-mono-code text-[11px] text-slate-300">LSJA24U90PN083083</td>
+          <td class="py-3 px-3 font-mono-code text-amber-300 font-bold">-</td>
+          <td class="py-3 px-3 space-y-1">
+            <div class="text-[11px]"><strong>1.</strong> Kasislerde Direksiyondan Gelen Ses Kontrolü <span class="text-emerald-400 font-bold">(Çözüldü)</span> <br><em class="text-slate-400">Çözüm Notu: Direksiyon arama mafsalı değiştirildi Sorun giderildi</em></div><div class="text-[11px]"><strong>2.</strong> Sol Ön Kapı Ayarı ve Kapanma Hassasiyeti <span class="text-cyan-300">(İnceleniyor)</span> </div><div class="text-[11px]"><strong>3.</strong> Sağ Ön B-Sütunu ve Emniyet Kemeri Çıtırtı Sesi <span class="text-cyan-300">(İnceleniyor)</span> </div>
+          </td>
+          <td class="py-3 px-3 text-slate-300">Oğuzhan Usta</td>
+          <td class="py-3 px-3"><span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">İnceleniyor</span></td>
+          <td class="py-3 px-3 text-right space-x-1">
+            <button onclick="selectRecord('ARZ-1792096016927')" class="bg-cyan-600 hover:bg-cyan-500 text-white font-bold px-3 py-1.5 rounded-xl text-[11px] cursor-pointer shadow">Aç</button>
+          </td>
+        </tr>
+      
+        <tr class="border-b border-slate-800 hover:bg-slate-950/50">
+          <td class="py-3 px-3 font-mono-code font-bold text-cyan-400">34 DTR 404<br><span class="text-white font-normal">MG4 Electric Luxury</span><br><span class="text-[10px] text-slate-400">İE-2026-912</span></td>
+          <td class="py-3 px-3 font-mono-code text-[11px] text-slate-300">LSJW74U92PZ048219</td>
+          <td class="py-3 px-3 font-mono-code text-amber-300 font-bold">P0AA6, U0140</td>
+          <td class="py-3 px-3 space-y-1">
+            <div class="text-[11px]"><strong>1.</strong> HV Batarya İzolasyon Hatası (P0AA6) <span class="text-cyan-300">(İnceleniyor)</span> </div><div class="text-[11px]"><strong>2.</strong> AC Şarj Kilitleme Mekanizması Arızası ve İletişim Kaybı (U0140) <span class="text-cyan-300">(İnceleniyor)</span> </div><div class="text-[11px]"><strong>3.</strong> Klima Kompresörü Titreşimi <span class="text-cyan-300">(İnceleniyor)</span> </div>
+          </td>
+          <td class="py-3 px-3 text-slate-300">Oğuzhan Usta</td>
+          <td class="py-3 px-3"><span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">İnceleniyor</span></td>
+          <td class="py-3 px-3 text-right space-x-1">
+            <button onclick="selectRecord('ARZ-1792095930416')" class="bg-cyan-600 hover:bg-cyan-500 text-white font-bold px-3 py-1.5 rounded-xl text-[11px] cursor-pointer shadow">Aç</button>
+          </td>
+        </tr>
+      </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAYFA 4: HIZLI OBD KOD ÇÖZÜCÜ -->
+    <section id="view-obd" class="hidden space-y-4">
+      <div class="max-w-3xl mx-auto bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-xl space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+          <div>
+            <h2 class="text-sm font-extrabold text-white flex items-center gap-2">
+              <i class="fa-solid fa-barcode text-amber-400"></i> Dinamik OBD-II / DTC Arıza Kodu &amp; Semptom Çözücü
+            </h2>
+            <p class="text-[11px] text-slate-400 mt-0.5">P, B, C, U serisi herhangi bir arıza kodunu veya arıza tanımını yazın, AI anında analiz etsin.</p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-2">
+          <input id="inp-quick-obd" type="text" placeholder="Örn: P0171, B1245, U0100 veya Bagaj Kilit Hatası" onkeydown="if(event.key==='Enter') lookupQuickOBD()" class="flex-1 bg-slate-950 border border-slate-700 focus:border-amber-400 rounded-xl px-3.5 py-2.5 text-sm font-mono-code font-bold text-amber-300 uppercase focus:outline-none">
+          <button id="btn-quick-obd" type="button" onclick="lookupQuickOBD()" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold px-5 py-2.5 rounded-xl text-xs cursor-pointer flex items-center justify-center gap-2 shrink-0">
+            <i class="fa-solid fa-bolt"></i> <span>Kodu Çözümle</span>
+          </button>
+        </div>
+        <div class="flex flex-wrap gap-1.5 pt-1">
+          <span class="text-[10px] text-slate-400 self-center mr-1">Örnek Kodlar:</span>
+          <button type="button" onclick="document.getElementById('inp-quick-obd').value='P0171';lookupQuickOBD()" class="px-2 py-1 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-400/50 text-[11px] font-mono-code text-amber-300 cursor-pointer">P0171</button>
+          <button type="button" onclick="document.getElementById('inp-quick-obd').value='P0300';lookupQuickOBD()" class="px-2 py-1 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-400/50 text-[11px] font-mono-code text-amber-300 cursor-pointer">P0300</button>
+          <button type="button" onclick="document.getElementById('inp-quick-obd').value='B1405';lookupQuickOBD()" class="px-2 py-1 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-400/50 text-[11px] font-mono-code text-amber-300 cursor-pointer">B1405 (Gövde/Kilit)</button>
+          <button type="button" onclick="document.getElementById('inp-quick-obd').value='U0100';lookupQuickOBD()" class="px-2 py-1 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-400/50 text-[11px] font-mono-code text-amber-300 cursor-pointer">U0100 (CAN-Bus)</button>
+          <button type="button" onclick="document.getElementById('inp-quick-obd').value='C1201';lookupQuickOBD()" class="px-2 py-1 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-400/50 text-[11px] font-mono-code text-amber-300 cursor-pointer">C1201 (ABS/ESP)</button>
+        </div>
+        <div id="quick-obd-result" class="hidden bg-slate-950 border border-slate-800 rounded-xl p-4 space-y-3 text-xs"></div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+    import { getFirestore, collection, doc, setDoc, deleteDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+    // GÖMÜLÜ FIREBASE YAPILANDIRMASI (otopro-faa28)
+    const firebaseConfig = {
+      apiKey: "AIzaSyCeUY3VUggExahsxkEC49dovAlqZbkaw6w",
+      authDomain: "otopro-faa28.firebaseapp.com",
+      projectId: "otopro-faa28",
+      storageBucket: "otopro-faa28.firebasestorage.app",
+      messagingSenderId: "513458992267",
+      appId: "1:513458992267:web:0c0a82ac02484b03b8508e",
+      measurementId: "G-Z8ZZ3SFD5B"
+    };
+
+    // GÖMÜLÜ GEMINI ANAHTAR ZİNCİRİ
+    const EMBEDDED_GEMINI_KEYS = [
+      localStorage.getItem("otoai_custom_gemini_key") || "",
+      "AIzaSyCeUY3VUggExahsxkEC49dovAlqZbkaw6w",
+      "AQ.Ab8RN6LnVBiZEQ3Mf4n6RovkUes8besdOiu9LLpkdJGoCLT6ig",
+      ""
+    ];
+
+    let db = null;
+    try {
+      const app = initializeApp(firebaseConfig);
+      db = getFirestore(app);
+    } catch(e) {}
+
+    let technicians = JSON.parse(localStorage.getItem("otoai_techs") || "null") || [
+      { username: "oguzhan", name: "Oğuzhan Usta", pin: "1234" },
+      { username: "sinan", name: "Sinan Usta", pin: "1234" }
+    ];
+
+    let activeTech = JSON.parse(localStorage.getItem("otoai_active_tech") || "null");
+    let records = JSON.parse(localStorage.getItem("otoai_records") || "null") || [];
+    let activeRecordId = records[0]?.id || null;
+
+    let logoClickCount = 0;
+    window.handleSecretLogoClick = function() {
+      logoClickCount++;
+      if (logoClickCount >= 3) {
+        logoClickCount = 0;
+        openConfigModal();
+      }
+    };
+
+    document.addEventListener('keydown', function(e) {
+      if (e.ctrlKey && e.shiftKey && e.key.toUpperCase() === 'S') {
+        e.preventDefault();
+        openConfigModal();
+      }
+    });
+
+    window.showToast = function(msg, type = "info") {
+      const box = document.getElementById("toast-box");
+      if (!box) return;
+      const el = document.createElement("div");
+      const colors = type === "error"
+        ? "bg-rose-950/95 border-rose-500/50 text-rose-200"
+        : type === "success"
+        ? "bg-emerald-950/95 border-emerald-500/50 text-emerald-200"
+        : "bg-slate-900/95 border-cyan-500/50 text-cyan-200";
+      el.className = `p-3 rounded-xl border shadow-xl text-xs font-bold flex items-center gap-2 transition-all ${colors}`;
+      el.innerHTML = `<i class="fa-solid ${type === 'error' ? 'fa-circle-exclamation text-rose-400' : 'fa-circle-check text-emerald-400'}"></i><span>${msg}</span>`;
+      box.appendChild(el);
+      setTimeout(() => { el.remove(); }, 3200);
+    };
+
+    window.openConfigModal = function() {
+      const savedKey = localStorage.getItem("otoai_custom_gemini_key") || "";
+      document.getElementById("inp-custom-gemini-key").value = savedKey;
+      document.getElementById("config-modal").classList.remove("hidden");
+    };
+
+    window.closeConfigModal = function() {
+      document.getElementById("config-modal").classList.add("hidden");
+    };
+
+    window.downloadReadyIndexHtml = function() {
+      const customKey = (document.getElementById("inp-custom-gemini-key").value || "").trim();
+      if (customKey) {
+        localStorage.setItem("otoai_custom_gemini_key", customKey);
+      }
+      let htmlContent = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+      if (customKey) {
+        htmlContent = htmlContent.replace(
+          'const EMBEDDED_GEMINI_KEYS = [',
+          `const EMBEDDED_GEMINI_KEYS = [\n      "${customKey}",`
+        );
+      }
+      const blob = new Blob([htmlContent], { type: "text/html;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "index.html";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      showToast("Hazır index.html dosyası indirildi!", "success");
+      closeConfigModal();
+    };
+
+    async function callGeminiJSON(promptText, inlineImage = null) {
+      const customKey = (localStorage.getItem("otoai_custom_gemini_key") || "").trim();
+      const keysToTry = [...new Set([customKey, ...EMBEDDED_GEMINI_KEYS])].filter(Boolean);
+      const models = ["gemini-2.5-flash", "gemini-3-flash-preview", "gemini-2.5-flash-preview-09-2025"];
+      const parts = [{ text: promptText }];
+      if (inlineImage) {
+        parts.push({ inlineData: inlineImage });
+      }
+
+      for (const key of keysToTry) {
+        for (const m of models) {
+          try {
+            const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${key}`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                contents: [{ parts }],
+                generationConfig: { responseMimeType: "application/json" }
+              })
+            });
+            if (!res.ok) continue;
+            const data = await res.json();
+            const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+            if (text) return JSON.parse(text);
+          } catch (e) {}
+        }
+      }
+      return null;
+    }
+
+    function buildDynamicFallbackGuide(symptomText, carModel, engine, obdList) {
+      const s = (symptomText || "").toLowerCase();
+      const obdStr = (obdList || []).join(", ");
+
+      if (s.includes("bagaj") || s.includes("kilit") || s.includes("kapı") || s.includes("açılmıyor") || s.includes("kapanmıyor")) {
+        return {
+          tahminiZorluk: "Orta",
+          olasiNedenler: [
+            { neden: "Bagaj Kilit Aktüatörü (Solenoid Motoru) Arızası", olasilikYuzdesi: 45, aciklama: "Kilit içindeki elektrik motorunun veya dişlisinin sıkışması / yanması." },
+            { neden: "Bagaj Açma Butonu (Mikro Switch) Oksitlenmesi", olasilikYuzdesi: 30, aciklama: "Dış bagaj mandalı içindeki mikro anahtarın su/nem kaynaklı temassızlığı." },
+            { neden: "Bagaj Kapağı Körük İçi Kablo Tesisatı Kopukluğu", olasilikYuzdesi: 15, aciklama: "Gövdeden bagaj kapağına geçen esnek körük içindeki kabloların zamanla kırılması." },
+            { neden: "BCM (Gövde Kontrol Modülü) / Sigorta Kaynaklı Kesinti", olasilikYuzdesi: 10, aciklama: "Merkezi kilit sigortası atması veya BCM çıkış sinyali eksikliği." }
+          ],
+          adimAdimCozum: [
+            { adimNo: 1, baslik: "Manuel Acil Açma ve Sigorta Kontrolü", detay: "Arka koltuk içinden acil bagaj açma mandalıyla kapağı açın. Sigorta kutusundan merkezi kilit / bagaj sigortasını (genelde 15A-20A) kontrol edin." },
+            { adimNo: 2, baslik: "Buton ve Aktüatör Sesi Dinleme / Voltaj Ölçümü", detay: "Kumandadan veya bagaj düğmesine basıldığında kilit motorundan 'tık' sesi gelip gelmediğine bakın. Sokette 12V tetik voltajını multimetre ile ölçün." },
+            { adimNo: 3, baslik: "Bagaj Körüğü Kablo Demeti Kontrolü", detay: "12V gelmiyorsa sol/sağ üst menteşe yanındaki lastik körüğü sıyırarak kırık veya kopuk kabloları onarın." },
+            { adimNo: 4, baslik: "Kilit Mekanizması veya Switch Değişimi", detay: "Sokete 12V geliyor ancak kilit açmıyorsa bagaj kilit mekanizmasını; düğme sinyal göndermiyorsa dış açma butonunu (mikro switch) değiştirin." }
+          ]
+        };
+      }
+
+      if (s.includes("klima") || s.includes("soğutmuyor") || s.includes("ısıtmıyor") || s.includes("kalorifer") || s.includes("fan")) {
+        return {
+          tahminiZorluk: "Orta",
+          olasiNedenler: [
+            { neden: "Klima Gazı (R134a / R1234yf) Eksikliği veya Kaçağı", olasilikYuzdesi: 45, aciklama: "Kondenser veya boru bağlantılarından gaz kaçağı nedeniyle basınç düşüklüğü." },
+            { neden: "Klima Kompresör Kasnağı / Basınç Valfi (N280) Arızası", olasilikYuzdesi: 30, aciklama: "Kompresörün devreye girmemesi veya selenoid valfinin sıkışması." },
+            { neden: "Kalorifer Peteği Tıkanıklığı / Klepe Motoru", olasilikYuzdesi: 25, aciklama: "Sıcak-soğuk yönlendirme klepe motorunun takılı kalması veya petek tıkanıklığı." }
+          ],
+          adimAdimCozum: [
+            { adimNo: 1, baslik: "Klima Hat Basınçlarının Ölçümü", detay: "Klima istasyonu ile alçak ve yüksek basınç değerlerini ve sistemdeki gaz gramajını kontrol edin." },
+            { adimNo: 2, baslik: "Kompresör ve Fan Devreye Girme Testi", detay: "AC tuşuna basıldığında kompresör valfine gelen akımı ve radyatör fanının 1. kademe çalışmasını doğrulayın." },
+            { adimNo: 3, baslik: "Kabin İçi Sıcaklık Klepe Kalibrasyonu", detay: "Diagnostik cihazı ile klima kontrol ünitesi (HVAC) klepe motorlarına temel ayar/kalibrasyon yapın." }
+          ]
+        };
+      }
+
+      if (s.includes("fren") || s.includes("abs") || s.includes("esp") || s.includes("pedal") || s.includes("titreme")) {
+        return {
+          tahminiZorluk: "Orta",
+          olasiNedenler: [
+            { neden: "Fren Diski Yüzey Eğriliği (Salgı) veya Balata Aşınması", olasilikYuzdesi: 50, aciklama: "Yüksek ısı değişimi nedeniyle disk yüzeyinde mikronluk sapma." },
+            { neden: "Tekerlek ABS Hız Sensörü / Rulman Okuyucu Halkası", olasilikYuzdesi: 30, aciklama: "Sensör ucuna metal çapak yapışması veya kablo kopukluğu." },
+            { neden: "Fren Hidroliği Nem Oranı / Kaliper Pimi Sıkışması", olasilikYuzdesi: 20, aciklama: "Kaliper kızak pimlerinin yağsız kalarak balatayı tam bırakmaması." }
+          ],
+          adimAdimCozum: [
+            { adimNo: 1, baslik: "Disk Salgı ve Balata Kalınlık Ölçümü", detay: "Komparatör saati ile disk salgısını ölçün, kaliper kızak pimlerinin rahat çalıştığını kontrol edin." },
+            { adimNo: 2, baslik: "Canlı Tekerlek Hız Verileri Kontrolü", detay: "Cihazdan 4 tekerlek hız sensörünün (km/s) aynı anda eşit okuduğunu yol testinde doğrulayın." }
+          ]
+        };
+      }
+
+      if (s.includes("marş") || s.includes("çalışmıyor") || s.includes("akü") || s.includes("şarj") || s.includes("elektrik")) {
+        return {
+          tahminiZorluk: "Orta",
+          olasiNedenler: [
+            { neden: "Akü Marş Basma Kapasitesi (CCA) Düşüklüğü / Şarj Dinamosu", olasilikYuzdesi: 45, aciklama: "Marş anında voltajın 9.5V altına düşmesi veya alternatör konjektör arızası." },
+            { neden: "Marş Motoru Otomatiği (Selenoid) veya Kömür Aşınması", olasilikYuzdesi: 35, aciklama: "Marş dişlisinin volana tam basmaması veya yüksek akım çekmesi." },
+            { neden: "Krank / Eksantrik Devir Sensörü Sinyal Kaybı", olasilikYuzdesi: 20, aciklama: "ECU'nun motor devrini göremediği için enjeksiyonu başlatmaması." }
+          ],
+          adimAdimCozum: [
+            { adimNo: 1, baslik: "Akü Voltaj ve Alternatör Şarj Testi", detay: "Marş esnasında voltaj düşümünü ve araç çalışırken 13.8V - 14.4V şarj değerini ölçün." },
+            { adimNo: 2, baslik: "Marş Selenoid Tetik (Terminal 50) ve Şase Kontrolü", detay: "Motor-gövde şase kablosunu ve marş otomatiğine gelen tetik voltajını kontrol edin." },
+            { adimNo: 3, baslik: "Canlı Değerlerden Krank Devri (RPM) Okuma", detay: "Marş basarken cihazdan motor devrinin (200-280 RPM) okunup okunmadığını kontrol edin." }
+          ]
+        };
+      }
+
+      return {
+        tahminiZorluk: "Orta",
+        olasiNedenler: [
+          { neden: `«${symptomText}» İlgili Birincil Aktüatör / Mekanik Parça Kusuru`, olasilikYuzdesi: 50, aciklama: `${carModel} (${engine}) sisteminde bu şikayete bağlı ana bileşen veya mekanizma aşınması.` },
+          { neden: `İlgili Sensör / Soket veya Tesisat Temassızlığı ${obdStr ? '('+obdStr+')' : ''}`, olasilikYuzdesi: 30, aciklama: "İlgili devredeki soket oksitlenmesi, sigorta veya sinyal gerilimi sapması." },
+          { neden: "Kontrol Ünitesi Adaptasyon / Kalibrasyon İhtiyacı", olasilikYuzdesi: 20, aciklama: "Parça değerlerinin limit dışına çıkması sonucu yeniden kalibrasyon gereksinimi." }
+        ],
+        adimAdimCozum: [
+          { adimNo: 1, baslik: "Görsel, Fiziksel ve Sigorta/Tesisat Kontrolü", detay: `«${symptomText}» şikayetiyle ilgili mekanik bağlantıları, ilgili sigortayı ve soket pinlerini kontrol edin.` },
+          { adimNo: 2, baslik: "Diagnostik Cihazı ile Canlı Veri ve Aktüatör Testi", detay: `${carModel} ilgili kontrol ünitesine bağlanarak bileşen aktivasyon (output) testini çalıştırın.` },
+          { adimNo: 3, baslik: "Parça Onarımı / Değişimi ve Fonksiyon Testi", detay: "Arızalı tespit edilen parçayı onarın veya değiştirin, arıza hafızasını silip testi tekrarlayın." }
+        ]
+      };
+    }
+
+    window.switchAuthTab = function(mode) {
+      document.getElementById("auth-form-login").classList.toggle("hidden", mode !== "login");
+      document.getElementById("auth-form-register").classList.toggle("hidden", mode === "login");
+      document.getElementById("auth-tab-login").className = mode === "login" ? "py-2 rounded-xl text-xs font-extrabold bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow cursor-pointer" : "py-2 rounded-xl text-xs font-bold text-slate-400 cursor-pointer";
+      document.getElementById("auth-tab-register").className = mode !== "login" ? "py-2 rounded-xl text-xs font-extrabold bg-gradient-to-r from-emerald-600 to-cyan-600 text-white shadow cursor-pointer" : "py-2 rounded-xl text-xs font-bold text-slate-400 cursor-pointer";
+    };
+
+    window.submitLogin = function() {
+      const u = (document.getElementById("login-username").value || "").trim().toLowerCase();
+      const p = (document.getElementById("login-password").value || "").trim();
+      const found = technicians.find(t => t.username === u && t.pin === p);
+      if (!found) {
+        showAuthError("Kullanıcı adı veya şifre hatalı! (Örn: oguzhan / 1234)");
+        return;
+      }
+      activeTech = found;
+      localStorage.setItem("otoai_active_tech", JSON.stringify(activeTech));
+      checkAuthGate();
+    };
+
+    window.submitRegister = async function() {
+      const name = (document.getElementById("reg-fullname").value || "").trim();
+      const username = (document.getElementById("reg-username").value || "").trim().toLowerCase();
+      const pin = (document.getElementById("reg-password").value || "").trim();
+      if (!name || !username || !pin) {
+        showAuthError("Tüm alanları doldurun.");
+        return;
+      }
+      if (technicians.some(t => t.username === username)) {
+        showAuthError("Bu kullanıcı adı zaten alınmış.");
+        return;
+      }
+      const newT = { username, name, pin };
+      technicians.push(newT);
+      localStorage.setItem("otoai_techs", JSON.stringify(technicians));
+      if (db) {
+        try { await setDoc(doc(db, "public", "data", "technicians", username), newT); } catch(e) {}
+      }
+      activeTech = newT;
+      localStorage.setItem("otoai_active_tech", JSON.stringify(activeTech));
+      checkAuthGate();
+    };
+
+    window.logoutTechnician = function() {
+      localStorage.removeItem("otoai_active_tech");
+      activeTech = null;
+      checkAuthGate();
+    };
+
+    function showAuthError(msg) {
+      const box = document.getElementById("auth-error-box");
+      document.getElementById("auth-error-text").textContent = msg;
+      box.classList.remove("hidden");
+    }
+
+    function checkAuthGate() {
+      const gate = document.getElementById("auth-gate-screen");
+      if (activeTech) {
+        gate.classList.add("hidden");
+        document.getElementById("active-tech-name").textContent = activeTech.name;
+        document.getElementById("active-tech-username").textContent = `@${activeTech.username}`;
+        document.getElementById("active-tech-avatar").textContent = activeTech.name[0].toUpperCase();
+        renderAll();
+      } else {
+        gate.classList.remove("hidden");
+        renderQuickUsers();
+      }
+    }
+
+    function renderQuickUsers() {
+      const box = document.getElementById("auth-quick-users");
+      if (!box) return;
+      box.innerHTML = technicians.map(t => `
+        <button type="button" onclick="quickLogin('${t.username}')" class="px-2.5 py-1.5 rounded-xl bg-slate-950 border border-slate-800 text-left text-xs cursor-pointer hover:border-cyan-500 transition">
+          <span class="font-bold text-white">${t.name}</span> <span class="text-cyan-400 font-mono-code">(@${t.username}, 1234)</span>
+        </button>
+      `).join("");
+    }
+
+    window.quickLogin = function(username) {
+      const t = technicians.find(x => x.username === username);
+      if (t) {
+        activeTech = t;
+        localStorage.setItem("otoai_active_tech", JSON.stringify(activeTech));
+        checkAuthGate();
+      }
+    };
+
+    window.switchView = function(name) {
+      ["intake", "guide", "database", "obd"].forEach(v => {
+        document.getElementById(`view-${v}`).classList.toggle("hidden", v !== name);
+        const btn = document.getElementById(`tab-btn-${v}`);
+        if (btn) {
+          btn.className = v === name
+            ? "w-10 h-10 rounded-xl flex items-center justify-center transition-all bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md text-base cursor-pointer"
+            : "w-10 h-10 rounded-xl flex items-center justify-center transition-all text-slate-400 hover:text-white hover:bg-slate-800/60 text-base cursor-pointer";
+        }
+      });
+    };
+
+    window.resetFormForNewCar = function() {
+      switchView("intake");
+      ["inp-vin", "inp-plate", "inp-workorder-no", "inp-model", "inp-year", "inp-engine", "inp-km", "inp-obd", "inp-symptoms"].forEach(id => {
+        document.getElementById(id).value = "";
+      });
+    };
+
+    window.simulateSampleWorkOrder = function() {
+      document.getElementById("inp-vin").value = "WVWZZZ3CZGE149284";
+      document.getElementById("inp-plate").value = "34 KLM 88";
+      document.getElementById("inp-workorder-no").value = "İE-2026-841";
+      document.getElementById("inp-model").value = "VW Passat";
+      document.getElementById("inp-year").value = "2018";
+      document.getElementById("inp-engine").value = "1.6 TDI";
+      document.getElementById("inp-km").value = "184000";
+      document.getElementById("inp-obd").value = "P0299, P0401";
+      document.getElementById("inp-symptoms").value = "1) Yokuşta çekiş düşüyor ve kızdırma lambası yanıp sönüyor\n2) Aracın bagajı açılmamaktadır";
+      showToast("Örnek iş emri bilgileri dolduruldu.", "success");
+    };
+
+    window.handleWorkOrderFile = async function(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const statusBox = document.getElementById("ai-scan-status");
+      statusBox.classList.remove("hidden");
+
+      const reader = new FileReader();
+      reader.onload = async function(e) {
+        const base64Data = e.target.result.split(',')[1];
+        try {
+          const prompt = `Bu otomotiv servis iş emri fotoğrafını dikkatle oku ve şu JSON formatında döndür:
+{
+  "workOrderNo": "İş emri numarası / Fiş no / Belge no (ör. İE-2026-841, 10452 vb.)",
+  "vin": "17 haneli şasi numarası (varsa, O yerine 0 kullan)",
+  "plate": "Araç plakası",
+  "model": "Marka ve model",
+  "year": "Model yılı (sayı)",
+  "engine": "Motor tipi",
+  "km": "Kilometre (sadece sayı)",
+  "obdCodes": "Varsa OBD/DTC arıza kodları virgülle ayrılmış",
+  "symptoms": "Müşteri şikayetleri ve arıza maddeleri (her madde yeni satırda 1) ... 2) ... şeklinde)"
+}`;
+          const data = await callGeminiJSON(prompt, { mimeType: file.type || "image/jpeg", data: base64Data });
+          if (data) {
+            if (data.workOrderNo) document.getElementById("inp-workorder-no").value = String(data.workOrderNo).trim();
+            if (data.vin) document.getElementById("inp-vin").value = String(data.vin).toUpperCase().replace(/[^A-Z0-9]/g, "");
+            if (data.plate) document.getElementById("inp-plate").value = String(data.plate).toUpperCase().trim();
+            if (data.model) document.getElementById("inp-model").value = String(data.model).trim();
+            if (data.year) document.getElementById("inp-year").value = String(data.year).replace(/\D/g, "");
+            if (data.engine) document.getElementById("inp-engine").value = String(data.engine).trim();
+            if (data.km) document.getElementById("inp-km").value = String(data.km).replace(/\D/g, "");
+            if (data.obdCodes) document.getElementById("inp-obd").value = Array.isArray(data.obdCodes) ? data.obdCodes.join(", ") : String(data.obdCodes);
+            if (data.symptoms) {
+              document.getElementById("inp-symptoms").value = Array.isArray(data.symptoms) ? data.symptoms.join("\n") : String(data.symptoms);
+            }
+            showToast("İş emri başarıyla okundu!", "success");
+          } else {
+            showToast("Fotoğraf net okunamadı, lütfen alanları kontrol edin.", "error");
+          }
+        } catch(err) {
+          showToast("Okuma sırasında hata oluştu.", "error");
+        } finally {
+          statusBox.classList.add("hidden");
+          event.target.value = "";
+        }
+      };
+      reader.readAsDataURL(file);
+    };
+
+    window.generateAiGuide = async function() {
+      const plate = (document.getElementById("inp-plate").value || "").trim().toUpperCase();
+      const model = (document.getElementById("inp-model").value || "").trim();
+      const symptoms = (document.getElementById("inp-symptoms").value || "").trim();
+      if (!plate || !model || !symptoms) {
+        showToast("Lütfen Plaka, Marka/Model ve en az bir şikayet maddesi girin!", "error");
+        return;
+      }
+
+      const workOrderNo = (document.getElementById("inp-workorder-no").value || "").trim() || `İE-${new Date().getFullYear()}-${Math.floor(100 + Math.random()*900)}`;
+      const vin = (document.getElementById("inp-vin").value || "").trim().toUpperCase() || "BELİRTİLMEDİ";
+      const year = (document.getElementById("inp-year").value || "").trim() || "2020";
+      const engine = (document.getElementById("inp-engine").value || "").trim() || "Standart";
+      const km = (document.getElementById("inp-km").value || "").trim() || "100000";
+      const obdCodes = (document.getElementById("inp-obd").value || "").split(",").map(s => s.trim().toUpperCase()).filter(Boolean);
+
+      const lines = symptoms.split(/\r?\n/).map(s => s.replace(/^\s*\d+[\.\)\-]\s*/, "").trim()).filter(Boolean);
+
+      const btn = document.getElementById("btn-generate-guide");
+      const origHtml = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> <span>Yapay Zeka Şikayetleri Analiz Ediyor...</span>`;
+
+      let aiParsedItems = null;
+      try {
+        const prompt = `Sen uzman bir otomotiv ve elektrikli araç başteknisyenisin.
+Araç: ${year} ${model}, Motor: ${engine}, KM: ${km}, OBD Kodları: ${obdCodes.join(", ") || "Yok"}.
+Müşteri şikayet maddeleri:
+${lines.map((l, idx) => `${idx + 1}) ${l}`).join("\n")}
+
+Lütfen HER BİR şikayet maddesi için TAMAMEN O ŞİKAYETE ÖZEL kök nedenleri ve adım adım teşhis kılavuzunu aşağıdaki JSON şemasında Türkçe olarak üret:
+{
+  "items": [
+    {
+      "title": "Şikayet maddesi metni",
+      "tahminiZorluk": "Kolay | Orta | Zor",
+      "olasiNedenler": [
+        { "neden": "Somut arıza nedeni", "olasilikYuzdesi": 55, "aciklama": "Teknik açıklama" }
+      ],
+      "adimAdimCozum": [
+        { "adimNo": 1, "baslik": "Kontrol başlığı", "detay": "Ustanın yapacağı net teknik işlem ve ölçüm" }
+      ]
+    }
+  ]
+}`;
+        const res = await callGeminiJSON(prompt);
+        if (res && Array.isArray(res.items) && res.items.length > 0) {
+          aiParsedItems = res.items;
+        }
+      } catch (e) {}
+
+      const faultItems = lines.map((l, i) => {
+        const aiItem = aiParsedItems?.[i];
+        const fallback = buildDynamicFallbackGuide(l, model, engine, obdCodes);
+        return {
+          id: `FI-${Date.now()}-${i}`,
+          title: l,
+          status: "İnceleniyor",
+          verifiedSolution: "",
+          aiGuide: {
+            tahminiZorluk: aiItem?.tahminiZorluk || fallback.tahminiZorluk,
+            olasiNedenler: (Array.isArray(aiItem?.olasiNedenler) && aiItem.olasiNedenler.length) ? aiItem.olasiNedenler : fallback.olasiNedenler,
+            adimAdimCozum: (Array.isArray(aiItem?.adimAdimCozum) && aiItem.adimAdimCozum.length) ? aiItem.adimAdimCozum : fallback.adimAdimCozum
+          }
+        };
+      });
+
+      const newRec = {
+        id: `ARZ-${Date.now()}`,
+        workOrderNo,
+        vin,
+        plate,
+        model,
+        year,
+        engine,
+        km,
+        obdCodes,
+        status: "İnceleniyor",
+        technicianName: activeTech?.name || "Teknisyen",
+        activeFaultIndex: 0,
+        faultItems
+      };
+
+      records.unshift(newRec);
+      activeRecordId = newRec.id;
+      await saveAndSync(newRec);
+
+      btn.disabled = false;
+      btn.innerHTML = origHtml;
+
+      switchView("guide");
+      renderAll();
+      showToast(`${plate} için arıza kılavuzu hazırlandı.`, "success");
+    };
+
+    function getActiveRec() { return records.find(r => r.id === activeRecordId); }
+    function getActiveItem(rec) { return rec?.faultItems?.[rec.activeFaultIndex || 0]; }
+
+    window.selectFaultItem = function(idx) {
+      const r = getActiveRec();
+      if (r) { r.activeFaultIndex = idx; renderGuide(); }
+    };
+
+    window.saveSolutionNoteDraft = function() {
+      const r = getActiveRec();
+      const item = getActiveItem(r);
+      if (!item) return;
+      item.verifiedSolution = document.getElementById("inp-verified-solution").value;
+      saveAndSync(r);
+    };
+
+    window.saveSolutionNote = function() {
+      saveSolutionNoteDraft();
+      showToast("Çözüm notu kaydedildi.", "success");
+    };
+
+    window.toggleItemSolved = function() {
+      const r = getActiveRec();
+      const item = getActiveItem(r);
+      if (!item) return;
+      item.status = item.status === "Çözüldü" ? "İnceleniyor" : "Çözüldü";
+      item.solvedBy = activeTech?.name || "Teknisyen";
+      recalculateStatus(r);
+      saveAndSync(r);
+      renderAll();
+      showToast(`Madde durumu «${item.status}» olarak güncellendi.`, "success");
+    };
+
+    window.saveAllAndArchive = function() {
+      const r = getActiveRec();
+      if (!r) return;
+      recalculateStatus(r);
+      saveAndSync(r);
+      switchView("database");
+      renderAll();
+      showToast("Tüm çözümler bulut arşivine kaydedildi.", "success");
+    };
+
+    window.deleteActiveRecord = function() {
+      const r = getActiveRec();
+      if (!r) {
+        showToast("Silinecek aktif kayıt bulunamadı.", "error");
+        return;
+      }
+      const desc = document.getElementById("delete-modal-desc");
+      if (desc) desc.textContent = `${r.plate} (${r.model} - İş Emri: ${r.workOrderNo || '-'}) kaydını silmek istediğinize emin misiniz?`;
+      document.getElementById("delete-confirm-modal").classList.remove("hidden");
+    };
+
+    window.closeDeleteModal = function() {
+      document.getElementById("delete-confirm-modal").classList.add("hidden");
+    };
+
+    window.confirmDeleteRecord = async function() {
+      const r = getActiveRec();
+      document.getElementById("delete-confirm-modal").classList.add("hidden");
+      if (!r) return;
+
+      const deletedId = r.id;
+      const deletedPlate = r.plate;
+      records = records.filter(x => x.id !== deletedId);
+      activeRecordId = records[0]?.id || null;
+      localStorage.setItem("otoai_records", JSON.stringify(records));
+
+      if (db) {
+        try {
+          await deleteDoc(doc(db, "public", "data", "faultRecords", deletedId));
+        } catch(e) {}
+      }
+
+      renderAll();
+      if (records.length > 0) {
+        switchView("database");
+      } else {
+        switchView("intake");
+      }
+      showToast(`${deletedPlate} kaydı arşivden silindi.`, "success");
+    };
+
+    function recalculateStatus(r) {
+      const solved = r.faultItems.filter(i => i.status === "Çözüldü").length;
+      r.status = solved === r.faultItems.length ? "Çözüldü" : (solved > 0 ? `Kısmen (${solved}/${r.faultItems.length})` : "İnceleniyor");
+    }
+
+    async function saveAndSync(rec) {
+      localStorage.setItem("otoai_records", JSON.stringify(records));
+      if (db && rec) {
+        try { await setDoc(doc(db, "public", "data", "faultRecords", rec.id), rec); } catch(e){}
+      }
+    }
+
+    window.renderAll = function() {
+      renderSidebar();
+      renderGuide();
+      renderDatabase();
+    };
+
+    function renderSidebar() {
+      const list = document.getElementById("sidebar-records-list");
+      if (!list) return;
+      list.innerHTML = records.map(r => `
+        <div onclick="selectRecord('${r.id}')" class="p-2.5 rounded-xl border cursor-pointer transition ${r.id === activeRecordId ? 'bg-cyan-950/70 border-cyan-500' : 'bg-slate-950 border-slate-800 hover:border-slate-700'}">
+          <div class="flex justify-between font-bold text-xs"><span class="text-cyan-400">${r.plate}</span><span class="text-slate-400">${r.status}</span></div>
+          <div class="text-slate-200 text-xs truncate">${r.model}</div>
+        </div>
+      `).join("");
+      document.getElementById("nav-db-count").textContent = records.length;
+    }
+
+    window.selectRecord = function(id) {
+      activeRecordId = id;
+      renderAll();
+      switchView("guide");
+    };
+
+    function renderGuide() {
+      const r = getActiveRec();
+      if (!r) return;
+      document.getElementById("guide-plate").textContent = r.plate;
+      document.getElementById("guide-car-title").textContent = r.model;
+      document.getElementById("guide-status-badge").textContent = r.status;
+      document.getElementById("guide-meta").textContent = `İş Emri: ${r.workOrderNo || '-'} • ${r.year} • ${r.km} KM • VIN: ${r.vin}`;
+
+      const tabs = document.getElementById("guide-fault-items-tabs");
+      tabs.innerHTML = r.faultItems.map((fi, i) => `
+        <button type="button" onclick="selectFaultItem(${i})" class="w-full text-left p-2.5 rounded-xl border text-xs cursor-pointer transition ${i === (r.activeFaultIndex||0) ? 'bg-cyan-950 border-cyan-400 text-white shadow' : 'bg-slate-950 border-slate-800 text-slate-300 hover:border-slate-700'}">
+          <div class="font-bold flex items-center justify-between gap-2">
+            <span>${i+1}. ${fi.title}</span>
+            <span class="px-1.5 py-0.5 rounded text-[10px] shrink-0 ${fi.status === 'Çözüldü' ? 'bg-emerald-500/20 text-emerald-300' : 'bg-amber-500/20 text-amber-300'}">${fi.status}</span>
+          </div>
+        </button>
+      `).join("");
+
+      const item = getActiveItem(r);
+      if (!item) return;
+      document.getElementById("selected-fault-badge").textContent = `Madde ${(r.activeFaultIndex||0)+1}`;
+      document.getElementById("guide-symptoms-text").textContent = item.title;
+      document.getElementById("inp-verified-solution").value = item.verifiedSolution || "";
+
+      document.getElementById("guide-causes-list").innerHTML = (item.aiGuide?.olasiNedenler || []).map(c => `
+        <div class="p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs space-y-1">
+          <div class="font-bold text-white flex justify-between gap-2"><span>${c.neden}</span><span class="text-cyan-400 shrink-0">%${c.olasilikYuzdesi}</span></div>
+          <div class="text-[11px] text-slate-400">${c.aciklama}</div>
+        </div>
+      `).join("");
+
+      document.getElementById("guide-steps-list").innerHTML = (item.aiGuide?.adimAdimCozum || []).map(s => `
+        <div class="p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs space-y-1">
+          <div class="font-bold text-white">Adım ${s.adimNo}: ${s.baslik}</div>
+          <div class="text-[11px] text-slate-300">${s.detay}</div>
+        </div>
+      `).join("");
+    }
+
+    function renderDatabase() {
+      const tbody = document.getElementById("database-table-body");
+      if (!tbody) return;
+      if (!records.length) {
+        tbody.innerHTML = `<tr><td colspan="7" class="py-6 text-center text-slate-500">Henüz kayıtlı araç bulunmuyor.</td></tr>`;
+        return;
+      }
+      tbody.innerHTML = records.map(r => `
+        <tr class="border-b border-slate-800 hover:bg-slate-950/50">
+          <td class="py-3 px-3 font-mono-code font-bold text-cyan-400">${r.plate}<br><span class="text-white font-normal">${r.model}</span><br><span class="text-[10px] text-slate-400">${r.workOrderNo || ''}</span></td>
+          <td class="py-3 px-3 font-mono-code text-[11px] text-slate-300">${r.vin}</td>
+          <td class="py-3 px-3 font-mono-code text-amber-300 font-bold">${(r.obdCodes || []).join(", ") || "-"}</td>
+          <td class="py-3 px-3 space-y-1">
+            ${r.faultItems.map((f, i) => `<div class="text-[11px]"><strong>${i+1}.</strong> ${f.title} <span class="${f.status === 'Çözüldü' ? 'text-emerald-400 font-bold' : 'text-cyan-300'}">(${f.status})</span> ${f.verifiedSolution ? '<br><em class="text-slate-400">Çözüm Notu: '+f.verifiedSolution+'</em>' : ''}</div>`).join("")}
+          </td>
+          <td class="py-3 px-3 text-slate-300">${r.technicianName}</td>
+          <td class="py-3 px-3"><span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">${r.status}</span></td>
+          <td class="py-3 px-3 text-right space-x-1">
+            <button onclick="selectRecord('${r.id}')" class="bg-cyan-600 hover:bg-cyan-500 text-white font-bold px-3 py-1.5 rounded-xl text-[11px] cursor-pointer shadow">Aç</button>
+          </td>
+        </tr>
+      `).join("");
+    }
+
+    const LOCAL_OBD_DB = {
+      "P0171": { title: "Sistem Çok Fakir (Bank 1)", desc: "Motor kontrol ünitesi (ECU), yakıt-hava karışımında aşırı hava veya yetersiz yakıt tespit etti.", causes: ["Emme manifoldu / vakum hortumu hava kaçağı", "MAF (Hava Akış) sensörü kirlenmesi", "Yakıt pompa basıncı düşüklüğü veya tıkalı enjektör"], check: "Kısa ve uzun vadeli yakıt düzeltme (STFT / LTFT) değerlerini kontrol edin, duman testi ile vakum kaçağı arayın." },
+      "P0300": { title: "Rastgele / Çoklu Silindir Ateşleme Kaybı (Misfire)", desc: "Birden fazla silindirde yanma gerçekleşmiyor veya düzensiz ateşleme var.", causes: ["Buji veya ateşleme bobini arızası", "Enjektör püskürtme dengesizliği", "Kompresyon düşüklüğü veya yakıt kalitesi"], check: "Canlı verilerden hangi silindirlerde misfire sayacı arttığını görün, buji ve bobinlerin yerini değiştirerek test edin." },
+      "P0299": { title: "Turbo / Süperşarj Basınç Düşüklüğü (Underboost)", desc: "İstenen turbo takviye basıncı ile MAP sensörünün ölçtüğü gerçek basınç arasında negatif sapma var.", causes: ["İntercooler veya turbo basınç hortumu yırtığı", "N75 basınç kontrol valfi / vakum kaçağı", "Turbo wastegate / VNT mekanizması sıkışması"], check: "Basınç hattına kaçak testi uygulayın, vakum hattını vakummetre ile ölçün." },
+      "P0401": { title: "EGR Akışı Yetersiz Tespit Edildi", desc: "Egzoz gazı geri dönüşüm (EGR) valfinden geçen gaz miktarı beklenen değerin altında.", causes: ["EGR valfi ve soğutucu kanallarında kurum tıkanıklığı", "EGR konum sensörü veya vakum diyaframı arızası", "Diferansiyel basınç sensörü hatası"], check: "Diagnostik cihazıyla EGR adaptasyon ve aktivasyon testi yapın, kurum temizliği uygulayın." },
+      "P0420": { title: "Katalitik Konvertör Verimliliği Eşik Değerin Altında (Bank 1)", desc: "Ön ve arka oksijen (lambda) sensörlerinin sinyalleri birbirine çok yakın, katalizör gazı yeterince temizleyemiyor.", causes: ["Katalitik konvertör iç peteğinin erimesi / dolması", "Egzoz hattında hava kaçağı", "Arka oksijen (Lambda 2) sensörü arızası"], check: "Lambda 1 ve Lambda 2 voltaj grafiklerini karşılaştırın. Arka sensör sabit (~0.6V-0.7V) kalmalı, dalgalanmamalıdır." },
+      "B1405": { title: "Gövde Kontrol / Bagaj & Merkezi Kilit Devresi Hatası", desc: "BCM (Gövde Kontrol Ünitesi) kilit aktüatörü veya bagaj açma anahtarı devresinde açık devre / kısa devre algıladı.", causes: ["Bagaj kilit motoru (aktüatör) arızası", "Bagaj kapağı geçiş körüğü içinde kırık kablo", "Dış bagaj açma mikro switch oksitlenmesi"], check: "Kilit soketinde 12V tetik voltajını ve bagaj körüğü içindeki kablo sürekliliğini multimetre ile ölçün." },
+      "U0100": { title: "ECM/PCM (Motor Kontrol Ünitesi) ile İletişim Kaybı (CAN-Bus)", desc: "Araçtaki diğer modüller CAN-Bus hattı üzerinden motor beyni ile haberleşemiyor.", causes: ["CAN-High / CAN-Low hattında kopukluk veya kısa devre", "ECU besleme rölesi (Terminal 30 / 15) veya sigorta atması", "Soket pinlerinde su teması / oksitlenme"], check: "OBD soketi 6 ve 14 numaralı pinler arasında (akü kutup başı sökülüyken) 60 Ohm CAN-Bus direncini ölçün." },
+      "C1201": { title: "ABS / ESP Sisteminde Motor Kontrol Kaynaklı Arıza", desc: "Motor yönetim sistemindeki bir hata nedeniyle ABS/VSC/ESP denge kontrol sistemi devre dışı bırakıldı.", causes: ["Motor beyninde aktif DTC kodu bulunması", "Fren müşürü (stop lambası anahtarı) sinyal hatası", "Tekerlek hız sensörü veya ABS pompa besleme hatası"], check: "Önce motor kontrol ünitesindeki (P kodlu) arızaları giderip silin, ardından ABS ünitesini temizleyin." }
+    };
+
+    window.lookupQuickOBD = async function() {
+      const rawInput = (document.getElementById("inp-quick-obd").value || "").trim();
+      const code = rawInput.toUpperCase();
+      const box = document.getElementById("quick-obd-result");
+      const btn = document.getElementById("btn-quick-obd");
+
+      if (!code) {
+        showToast("Lütfen bir OBD/DTC kodu veya arıza adı yazın.", "error");
+        return;
+      }
+
+      box.classList.remove("hidden");
+      box.innerHTML = `<div class="text-cyan-300 font-semibold flex items-center gap-2"><i class="fa-solid fa-circle-notch fa-spin"></i> <span>«${code}» kodu yapay zeka tarafından çözümleniyor...</span></div>`;
+      if (btn) btn.disabled = true;
+
+      let resultData = null;
+      try {
+        const prompt = `Sen uzman bir otomotiv diagnostik mühendisisin. Kullanıcının girdiği "${rawInput}" OBD-II / DTC arıza kodunu veya arıza tanımını analiz et ve aşağıdaki JSON formatında Türkçe yanıt ver:
+{
+  "code": "${code}",
+  "title": "Arıza kodunun resmi ve net Türkçe başlığı",
+  "system": "İlgili sistem (Motor, Şanzıman, Gövde/BCM, ABS/Şasi, CAN-Bus vb.)",
+  "desc": "Bu arıza kodunun ne anlama geldiğinin teknik açıklaması",
+  "causes": ["Olası neden 1", "Olası neden 2", "Olası neden 3"],
+  "check": "Ustanın multimetre veya diagnostik cihazla ilk bakması gereken yer ve ölçüm değeri"
+}`;
+        resultData = await callGeminiJSON(prompt);
+      } catch (e) {}
+
+      if (btn) btn.disabled = false;
+
+      if (!resultData || !resultData.title) {
+        const known = LOCAL_OBD_DB[code];
+        if (known) {
+          resultData = { code, title: known.title, system: "Otomotiv Diagnostik", desc: known.desc, causes: known.causes, check: known.check };
+        } else {
+          const prefix = code.charAt(0);
+          const sysMap = {
+            "P": "Motor & Aktarma Organları (Powertrain)",
+            "B": "Gövde, Kilit, Airbag & Konfor Elektroniği (Body - BCM)",
+            "C": "Şasi, ABS, ESP & Direksiyon Sistemi (Chassis)",
+            "U": "CAN-Bus & Modüller Arası İletişim Ağı (Network)"
+          };
+          const sysName = sysMap[prefix] || "Genel Araç Kontrol Sistemi";
+          resultData = {
+            code,
+            title: `${code} - ${sysName} Arıza Kodu`,
+            system: sysName,
+            desc: `${code} arıza kodu, ${sysName.toLowerCase()} devresinde sensör sinyali sınır dışı değeri, açık devre veya aktüatör tepki hatası algılandığını belirtir.`,
+            causes: [
+              `${code} ile ilişkili sensör veya aktüatör soketinde oksitlenme / temassızlık`,
+              `İlgili devredeki sigorta atması veya kablo tesisatında şaseye/artıya kısa devre`,
+              `Bileşenin mekanik sıkışması veya iç direnç değerinin bozulması`
+            ],
+            check: `Diagnostik cihazı ile ilgili kontrol ünitesinden canlı verileri (Live Data) okuyun, soket besleme voltajını (5V / 12V) ve şase sürekliliğini multimetre ile kontrol edin.`
+          };
+        }
+      }
+
+      box.innerHTML = `
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-2.5">
+          <div>
+            <span class="font-mono-code font-extrabold text-amber-400 text-sm">${resultData.code || code}</span>
+            <h3 class="text-white font-extrabold text-xs sm:text-sm mt-0.5">${resultData.title}</h3>
+          </div>
+          <span class="px-2.5 py-1 rounded-lg bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 text-[10px] font-bold">${resultData.system || 'Diagnostik'}</span>
+        </div>
+        <p class="text-slate-300 leading-relaxed">${resultData.desc}</p>
+        <div>
+          <div class="text-[11px] font-extrabold text-amber-300 uppercase mb-1.5"><i class="fa-solid fa-list-check mr-1"></i> Olası Kök Nedenler:</div>
+          <ul class="list-disc list-inside space-y-1 text-slate-300">
+            ${(resultData.causes || []).map(c => `<li>${c}</li>`).join("")}
+          </ul>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-900 border border-emerald-500/30 text-emerald-300">
+          <div class="font-extrabold text-[11px] uppercase mb-1"><i class="fa-solid fa-screwdriver-wrench mr-1"></i> Usta Kontrol & Ölçüm Tavsiyesi:</div>
+          <div class="text-slate-200">${resultData.check}</div>
+        </div>
+      `;
+    };
+
+    if (db) {
+      onSnapshot(collection(db, "public", "data", "faultRecords"), (snap) => {
+        const cloudRecs = [];
+        snap.forEach(d => cloudRecs.push(d.data()));
+        if (cloudRecs.length) {
+          records = cloudRecs.sort((a, b) => String(b.id).localeCompare(String(a.id)));
+          if (!activeRecordId && records.length) activeRecordId = records[0].id;
+          localStorage.setItem("otoai_records", JSON.stringify(records));
+          renderAll();
+        }
+      }, ()=>{});
+
+      onSnapshot(collection(db, "public", "data", "technicians"), (snap) => {
+        const cloudTechs = [];
+        snap.forEach(d => cloudTechs.push(d.data()));
+        if (cloudTechs.length) {
+          const merged = [...technicians];
+          cloudTechs.forEach(ct => {
+            if (!merged.some(m => m.username === ct.username)) merged.push(ct);
+          });
+          technicians = merged;
+          localStorage.setItem("otoai_techs", JSON.stringify(technicians));
+          renderQuickUsers();
+        }
+      }, ()=>{});
+    }
+
+    checkAuthGate();
+  </script>
+
+</body></html>
